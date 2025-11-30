@@ -20,12 +20,14 @@ The purpose of the model is to:
 ---
 
 ## *** Repository Structure ***
+```
 project_root/
 │── .gitignore
 │── requirements.txt
 │── README.md
 │── config.yaml                # Central user-editable project inputs
 │
+│── data/                      # NYISO Day Ahead Market and Real Time 2024 data
 │── src/                       # Reusable, modularized Python code
 │   ├── config_loader.py       # Loads YAML configuration
 │   ├── data_loader.py         # Loads & cleans NYISO LBMP data
@@ -90,7 +92,7 @@ Scenario Analysis:
 ---
 
 ## *** How to Run this Model ***
-1. Clone the repo: git clone https://github.com/yourusername/solar-bess-feasibility.git
+1. Clone the repo: git clone https://github.com/jess-olena/solar-bess-financial-model.git
 2. Install dependencies: pip install -r requirements.txt
 3. Add your NREL key: create .env → NREL_API_KEY=your_key_here
 4. Run the master notebook: notebooks/00_master_run.ipynb
