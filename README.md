@@ -2,7 +2,7 @@
 This is a Financial Feasibility Model for 1 MW Solar + 4-Hour BESS for Western New York (NYISO Zone A). It includes data ingestion of 2024 hourly NYISO Zone A prices, PVWatts solar generation model, BESS arbitrage model, and full DCF analysis using NREL 2024 ATB CAPEX/OPEX benchmarks. Developed as a final term project for Fall 2025 MGF 637 Financial Modeling under Dr. Scott Laing at the University at Buffalo.
 
 # Western NY Solar & 4-Hour BESS Financial Feasibility Model
-### Python-based renewable energy project analysis using NYISO 2024 market data and NREL ATB 2024
+### Python-based renewable energy project analysis using NYISO 2024 market data and 2024 NREL ATB 
 
 ---
 
