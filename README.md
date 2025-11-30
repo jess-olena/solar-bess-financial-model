@@ -55,11 +55,11 @@ project_root/
 ## *** Technologies and Data Sources ***
 | Component              | Source                                           |
 | ---------------------- | ------------------------------------------------ |
+| Python stack           | pandas, numpy, numpy-financial, pytz, matplotlib |
+| Price data             | NYISO 2024 LBMP (DAM + RTD)                      |
 | Solar generation model | NREL PVWatts API (TMY3 dataset)                  |
 | CAPEX/OPEX             | NREL ATB 2024 Utility PV + Storage               |
-| Price data             | NYISO 2024 LBMP (DAM + RTD)                      |
 | Tax incentives         | IRA ITC, MACRS, NYSERDA NY-Sun                   |
-| Python stack           | pandas, numpy, numpy-financial, pytz, matplotlib |
 
 ---
 
