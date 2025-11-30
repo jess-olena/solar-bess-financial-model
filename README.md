@@ -63,11 +63,13 @@ Generation Modeling:
 - Hourly solar PV Output (MWh) using PVWatts
 - Leap-year adjustments and timezone alignment for NYISO
 - 30-year solar degradation curve
+
 Storage Modeling:
 - 4-hour lithium-ion system
 - Charge/discharge efficiency modeling
 - Round-trip losses
 - Mid-life battery replacement year (year 15)
+
 Financial Modeling:
 - CAPEX: Solar + BESS + Interconnection
 - OPEX with inflation
@@ -75,11 +77,13 @@ Financial Modeling:
 - Optional NY-Sun upfront incentive
 - Cashflow simulation over 30 years
 - NPV and IRR calculation
+
 Sensitivity Analyses for:
 - Discount rate
 - Revenue growth
 - Solar CAPEX
 - BESS CAPEX
+
 Scenario Analysis:
 - Merchant / ITC / Energy Community / Full Incentive Stack
 
