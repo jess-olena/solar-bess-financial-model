@@ -1,0 +1,53 @@
+project:
+  name: "Western NY Solar + 4-Hour BESS Feasibility Study"
+  region: "NYISO Zone A (West NY)"
+  region_lat: 42.8864
+  region_lon: -78.8784
+  year: 2024
+  project_life: 30          # years (technical life)
+  degradation_rate: 0.005   # 0.5% per year
+  capacity_mw: 1.0          # MW     
+  timezone: "America/New_York"
+
+solar_generation:
+ tilt: 43
+ azimuth: 180
+ solar_degradation: 0.005   # 0.5% per year
+
+financials:
+  discount_rate: 0.07       # Weighted Average Cost of Capital
+  escalation_rate: 0.02     # Market price escalation (2%)
+  inflation_rate: 0.025     # Historic inflation rate for energy projects (2.5%)
+  o_and_m_per_mw: 15000     # Annual O&M cost per MW
+  itc_credit: 0.3           # 30% Investment Tax Credit (optional)
+
+capex:
+  solar_per_mw: 1200000     # Solar CAPEX ($/MW)
+  bess_per_mwh: 450000      # BESS CAPEX ($/MWh)
+  interconnection_cost: 500000  # optional grid connection estimate
+
+bess:
+  duration_hours: 4
+  roundtrip_efficiency: 0.9
+  charge_efficiency: 0.95
+  discharge_efficiency: 0.95
+  bess_degradation: 0.02
+  battery_replacement_year: 15
+  battery_replacement_cost_frac: 0.4 #40% of initial cost
+
+market:
+  base_price: 32.0          # Reference average LBMP ($/MWh)
+  price_volatility: 0.15    # +/-15% fluctuation range
+
+incentives:
+  itc_base: 0.30
+  itc_energy_community: 0.10
+  itc_low_income: 0.10
+  nysun_block: 0.25   # dollars per watt upfront incentive - https://www.nyserda.ny.gov/All-Programs/NY-Sun
+  use_macrs: true
+
+paths:
+  solar_output: "outputs/solar_hourly_2024.csv"
+  bess_output: "outputs/bess_dispatch_results.csv"
+  price_output: "outputs/lbmp_zoneA_cleaned.csv"
+  project_root: "C:/Users/olena/solar_finance_model"

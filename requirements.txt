@@ -1,0 +1,25 @@
+# Core numerical & data libraries
+numpy
+pandas
+numpy-financial
+
+# Plotting & visualization
+matplotlib
+seaborn
+
+# API access
+requests
+python-dotenv
+
+# Timezone handling
+pytz
+
+# Jupyter notebook support
+jupyter
+ipykernel
+
+# File handling and YAML config
+pyyaml
+
+# Prevents warnings about timezone formats in pandas
+python-dateutil
