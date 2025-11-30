@@ -48,6 +48,7 @@ project_root/
 │
 │── outputs/                   # Generated charts, CSVs, summary tables
 
+```
 ---
 
 ## *** Technologies and Data Sources ***
@@ -89,8 +90,6 @@ Sensitivity Analyses for:
 
 Scenario Analysis:
 - Merchant / ITC / Energy Community / Full Incentive Stack
-
----
 
 ---
 
