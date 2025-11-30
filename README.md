@@ -7,15 +7,16 @@ This is a Financial Feasibility Model for 1 MW Solar + 4-Hour BESS for Western N
 ---
 
 ## *** Overview ***
-This repository implements a financial feasibility model for a **1 MW utility-scale solar photovoltaic system paired with a 4-hour battery energy storage system (BESS)** located in **Western New York (NYISO Zone A)** using available 2024 data.
+This repository implements a financial feasibility model for a **1 MW utility-scale solar photovoltaic system paired with a 4-hour battery energy storage system (BESS)** located in **Western New York (NYISO Zone A)**.
 
 The purpose of the model is to:
-- Estimate **CAPEX**, **O&M**, and **battery replacement costs**
-- Simulate **annual solar generation with degradation**
-- Model **battery storage performance** and round-trip losses
-- Compute **cash flows, NPV, and IRR**
-- Evaluate **merchant revenue scenarios** based on NYISO LBMP prices
-- Run **sensitivity/scenario analyses** to support investment decisions
+- Compute cash flows, NPV, and IRR using NREL ATB data for equivalent CAPEX, O&M, and battery replacement costs
+
+This is done through:
+- Simulating annual solar generation from NREL's PVWatts and calculation of NYISO Zone A solar revenues
+- Modeling deployment of an add-on battery storage system for potential arbitrage
+- Evaluating solar developer revenue scenarios based on NYISO LBMP prices
+- Running sensitivity and various tax incentive scenario analyses to support investment decisions
 
 ---
 
