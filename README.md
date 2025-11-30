@@ -1,5 +1,5 @@
 # solar-bess-financial-model
-Financial Feasibility Model for 1 MW Solar + 4-Hour BESS (NYISO Zone A) Includes NREL ATB CAPEX/OPEX, PVWatts generation, hourly NYISO prices, BESS arbitrage, and full DCF analysis.
+This is a Financial Feasibility Model for 1 MW Solar + 4-Hour BESS for Western New York (NYISO Zone A). It includes NREL ATB CAPEX/OPEX, PVWatts generation, hourly NYISO prices, BESS arbitrage, and full DCF analysis. Developed as a final term project for MGF 637 Financial Modeling under Dr. Scott Laing.
 
 # Western NY Solar + 4-Hour BESS Financial Feasibility Model
 ### Python-based economic analysis using NREL ATB 2024 + NYISO 2024 market data
@@ -28,6 +28,7 @@ project_root/
 │── config.yaml                # Central user-editable project inputs
 │
 │── data/                      # NYISO Day Ahead Market and Real Time 2024 data
+|
 │── src/                       # Reusable, modularized Python code
 │   ├── config_loader.py       # Loads YAML configuration
 │   ├── data_loader.py         # Loads & cleans NYISO LBMP data
@@ -88,6 +89,40 @@ Sensitivity Analyses for:
 
 Scenario Analysis:
 - Merchant / ITC / Energy Community / Full Incentive Stack
+
+---
+
+---
+
+## *** Results Summary ***
+- Year 1 (2024) Solar Revenue: ~$38,640
+- Year 1 (2024) BESS Revenue:  ~$5,060
+- Total Year 1 (2024) Merchant Revenue: ~$43,700
+
+- Gross CAPEX: ~$3.5M (1 MW solar + 4 MWh BESS + interconnection)
+
+Financial results (merchant case vs incentives):
+
+| Scenario                               | NPV ($M) | IRR    | Net Initial Investment |
+|----------------------------------------|----------|--------|------------------------|
+| Merchant: No Incentives                | -3.41    | -10.6% | $3.5M                  |
+| Standard ITC: 30% + MACRS              | -1.67    | -7.9%  | $2.45M                 |
+| Energy Community: 40% + MACRS          | -1.36    | -7.3%  | $2.10M                 |
+| Full Dev: 50% ITC + NY-Sun + MACRS     | -0.80    | -5.6%  | $1.50M                 |
+
+---
+
+## *** Limitations & Next Steps ***
+Limitations:
+- Uses a single NYISO Zone A node and historical 2024 LBMP as a proxy for long-term pricing.
+- Assumes idealized BESS dispatch (may not capture actual summer revenue).
+- Does not currently model congestion, curtailment, or basis risk.
+- Financing structure is simplified (no explicit tax equity partnership).
+
+Potential extensions:
+- Adjust pricing to reflect potential negotiated PPA prices.
+- Introduce Monte Carlo price simulation for risk analysis.
+- Extend to 5–20 MW utility-scale projects with economies of scale.
 
 ---
 
