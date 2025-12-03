@@ -114,10 +114,9 @@ Financial results (merchant case vs incentives):
 
 ## *** Limitations & Next Steps ***
 Limitations:
-- Uses a single NYISO Zone A node and historical 2024 LBMP as a proxy for long-term pricing.
-- Assumes idealized BESS dispatch (may not capture actual summer revenue).
-- Does not currently model congestion, curtailment, or basis risk.
-- Financing structure is simplified (no explicit tax equity partnership).
+- Uses a single NYISO Zone A node and historical 2024 LBMP as a proxy for long-term pricing
+- Assumes idealized BESS dispatch (may not capture actual summer revenue)
+
 
 Potential extensions:
 - Adjust pricing to reflect potential negotiated PPA prices.
